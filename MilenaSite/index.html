@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/remodal-default-theme.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/remodal.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./content.css">
+    </head>
+<body>
+
+  <!-- НАВИГАЦИЯ -->
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="">FIRST AID</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">FIRST AID</span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li><a href="#">Главная</a></li>
+          <li>
+            <a href="#">Запись</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="#">Осмотр</a></li>
+              <li><a href="#">Вакцинация</a></li>
+              <li><a href="#">Терапия</a></li>
+              <li><a href="#">Хирургия</a></li>
+              <li><a href="#">Лаборатория</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Информация</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="#">О нас</a></li>
+                  <li><a href="#">Вопросы и ответы</a></li>
+                  <li><a href="#">Отзывы клиентов</a></li>
+                  <li><a href="#">Адреса клиник</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Помощь</a></li>
+          <li><a href="#">+7 (812) 467-90-60</a></li>
+            <li> <a class="mainButton" href="#modal">ЗАПИСАТЬСЯ</a>
+
+<div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+ <div class="remodalBorder">
+  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+      <form id="form">
+        <h2 id="modal1Title">ВВЕДИТЕ ЛИЧНЫЕ ДАННЫЕ ДЛЯ ЗАПИСИ</h2>
+        <input type="text" class="putName" name="name" placeholder="Ваше ваше имя" required>
+        <input name="phone" type="tel" class="putPhone" placeholder="Введите номер телефона" required>
+        <input type="submit" name="submit" class="btn" value="ОТПРАВИТЬ">
+    </form>
+</div>
+</div></li>
+
+<script src="js/remodal.min.js"></script>
+
+
+
+
+        </ul>
+      
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    
+<!-- ОСНОВНОЕ -->
+
+  <main class="container">
+    <div class="content">
+      <div class="text_content">
+      <h1> <span>Мы</span>  заботимся о животных из любви <br> и без выходных!</h1>
+      <button class="butn" onclick="openPop()" type="submit">Оставить заявку</button>
+              <div class="popup" id="popup">
+                  <img src="img/Tick_Mark_Dark_icon-icons.com_69147.svg" alt="">
+                  <h2>Спасибо</h2>
+                  <p>Ваша заявка принята! Мы Вам перезвоним</p>
+                  <button type="button" onclick="closePop()">Спасибо</button></div>
+              </div>
+             </div>
+   
+<h2 class="collection_text">УСЛУГИ</h2>
+  
+   
+   
+   </div>
+     
+<!-- КАРТОЧКИ -->
+
+  
+    <div id="myBtnContainer">
+        
+      <button class="btn active" onclick="filterSelection('vse')"> Все услуги</button>
+      <button class="btn" onclick="filterSelection('cats')">Кошки</button>
+      <button class="btn" onclick="filterSelection('dogs')">Собаки</button>
+      <button class="btn" onclick="filterSelection('ferm')"> Фермерские животные</button>
+      <button class="btn" onclick="filterSelection('drugoe')">Другие</button>
+    </div>
+  
+    <div class="container1">
+      <div class=" image1 filterDiv cats dogs drugoe vse ferm">Осмотр</div>
+      <div class=" image2 filterDiv dogs cats vse drugoe">Офтальмология</div>
+      <div class=" image3 filterDiv cats dog ferm vse">Хирургия</div>
+      <div class=" image4 filterDiv cats dogs vse drugoe">Лаб. исследования</div>
+      <div class="image5 filterDiv cats dogs vse drugoe">Рентгент</div>
+      <div class="image6 filterDiv cats dog vse">Груминг</div>
+      <div class="image7 filterDiv cats dogs ferm vse">Кардиология</div>
+      <div class="image8 filterDiv cats dogs vse">Гистология</div>
+      <div class="image9 filterDiv vse cats dogs ferm drugoe">Экстренная помощь</div>
+      <div class="image10 filterDiv cats dogs ferm vse">Акушерство</div>
+      <div class="image11 filterDiv cats dogs vse">Стоматология</div>
+      <div class=" image12 filterDiv vse drugoe">Вязка</div>
+    </div>
+  </div>
+   
+   </div>
+
+
+   <!-- ГРИДЫ -->
+   
+   
+<!-- СЛАЙДЕР -->
+
+   <h3 class="otziv">НАШИ СОТРУДНИКИ</h3>
+   <div class="slide-container swiper">
+    <div class="slide-content">
+      <div class="card-wrapper swiper-wrapper">
+        <div class="card swiper-slide">
+          <div class="recomendate">recommended</div>
+          <div class="image-content">
+            <div class="card-image">
+              <img src="images/Group 1.png" alt="" class="card-img" />
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Тютюгина Мария Родионовна</h2>
+            <p class="description">Главный врач, главный фельдшер</p>
+
+            <button class="button">ПОДРОБНЕЕ</button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <div class="card-image">
+              <img src="images/Group 2.png" alt="" class="card-img" />
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Грачёва Юлия Андреевна</h2>
+            <p class="description">Главный врач, главный фельдшер</p>
+
+            <button class="button">ПОДРОБНЕЕ</button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <div class="card-image">
+              <img src="images/Group 3.png" alt="" class="card-img" />
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Лонтьева Валерия Алексеевна</h2>
+            <p class="description">Главный врач, <br> хирург </p>
+
+            <button class="button">ПОДРОБНЕЕ</button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <div class="card-image">
+              <img src="images/Group 4.png" alt="" class="card-img" />
+
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Григорьева Алия Радиковна</h2>
+            <p class="description"> врач Фельдшер, офтальмолог</p>
+
+            <button class="button">ПОДРОБНЕЕ</button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <div class="card-image">
+              <img src="images/Group 5.png" alt="" class="card-img" />
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Сафина Гульнара Фаритовна</h2>
+            <p class="description">Главный врач, <br> анастезиолог</p>
+
+            <button class="button">ПОДРОБНЕЕ</button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <div class="card-image">
+              <img src="images/Group 6.png" alt="" class="card-img" />
+             
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Алакаева Мария Ильична</h2>
+            <p class="description">Хирург с высшим <br> стажем</p>
+
+            <button class="button">ПОДРОБНЕЕ</button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <div class="card-image">
+              <img src="images/Group 7.png" alt="" class="card-img" />
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Грешная Алина Владимировна</h2>
+            <p class="description"> Администратор <br> клиники</p>
+
+            <button class="button">ПОДРОБНЕЕ</button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <div class="card-image">
+              <img src="images/Group 9.png" alt="" class="card-img" />
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Ларина Татьяна Артемьевна</h2>
+            <p class="description"> Директор <br> ветеринарной клиники</p>
+
+            <button class="button">ПОДРОБНЕЕ</button>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <div class="card-image">
+              <img src="images/Group 8.png" alt="" class="card-img" />
+            </div>
+          </div>
+          <div class="card-content">
+            <h2 class="name">Бубаренко Ольга Вячеславовна</h2>
+            <p class="description">Хирург высшей <br> категории</p>
+
+            <button class="button">ПОДРОБНЕЕ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="swiper-button-next swiper-navBtn"></div>
+    <div class="swiper-button-prev swiper-navBtn"></div>
+  </div>
+   <h2 class="collection_text">НАШИ КЛИЕНТЫ</h2>
+   <div class="gallery">
+    <figure class="gallery__item gallery__item--1">
+        <img src="./images/Veterinarian-visit.jpg" alt="Gallery image 1" class="gallery__img">
+    </figure>
+    <figure class="gallery__item gallery__item--2">
+        <img src="./images/0a0d8fc6-abfe-4565-aa9e-5f4bc6db149b (1).jpg" alt="Gallery image 2" class="gallery__img">
+    </figure>
+    <figure class="gallery__item gallery__item--3">
+        <img src="./images/30258560067824171_2f8e.jpg" alt="Gallery image 3" class="gallery__img">
+    </figure>
+    <figure class="gallery__item gallery__item--4">
+        <img src="./images/Nashi-Vrachi.jpg" alt="Gallery image 4" class="gallery__img">
+    </figure>
+    <figure class="gallery__item gallery__item--5">
+        <img src="./images/st20201602-2.jpg" alt="Gallery image 5" class="gallery__img">
+    </figure>
+    <figure class="gallery__item gallery__item--6">
+        <img src="./images/1596789324-1147.jpg" alt="Gallery image 6" class="gallery__img">
+    </figure>
+</div>
+<!-- <video autoplay loop muted plays-inline class="background-clip">
+  <source src="./images/istockphoto-1423260698-640_adpp_is.mp4 " type="video/mp4">
+</video> -->
+   
+         </main>
+        
+         
+<!-- ПОДВАЛ -->
+
+<footer class="footer">
+      
+  <ul class="social-icon">
+    <li class="social-icon__item"><a class="social-icon__link" href="#">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a></li>
+    <li class="social-icon__item"><a class="social-icon__link" href="#">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </a></li>
+    <li class="social-icon__item"><a class="social-icon__link" href="#">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a></li>
+    <li class="social-icon__item"><a class="social-icon__link" href="#">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a></li>
+  </ul>
+  <ul class="menu">
+    <li class="menu__item"><a class="menu__link" href="#">Главная</a></li>
+    <li class="menu__item"><a class="menu__link" href="#">Запись</a></li>
+    <li class="menu__item"><a class="menu__link" href="#">Информация</a></li>
+    <li class="menu__item"><a class="menu__link" href="#">Помощь</a></li>
+
+  </ul>
+  <p>&copy;МИЛЕНА ТОХТИНА</p>
+</footer>
+<!-- modal -->
+    
+   
+
+
+
+
+
+    <script src="js/swiper-bundle.min.js"></script>
+
+<script src="./script1.js"></script>
+    <script src="js/script.js"></script>
+  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="js/remodal.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
